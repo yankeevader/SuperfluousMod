@@ -116,26 +116,22 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": [
-      {
-        "name": "TESTING",
-        "children": []
-      }
-    ]
+    "children": []
   },
   "workspaceSettings": {
     "modid": "superfluousmod",
     "modName": "SuperfluousMod",
     "version": "1.0.0",
-    "author": "Vader, MCreator",
+    "author": "yankeevader",
     "websiteURL": "https://mcreator.net",
-    "license": "Not specified",
+    "license": "MIT License",
     "serverSideOnly": false,
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
     "mcreatorDependencies": [],
     "currentGenerator": "forge-1.20.1",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
     "modElementsPackage": "net.yankeevader.superfluousmod"
   },
   "mcreatorVersion": 202400118518
