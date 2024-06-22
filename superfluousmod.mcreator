@@ -1,0 +1,137 @@
+{
+  "mod_elements": [
+    {
+      "name": "SuperfluousIngot",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superfluous_ingot",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/superfluousmod/models/item/superfluous_ingot.json",
+          "src/main/java/net/yankeevader/superfluousmod/item/SuperfluousIngotItem.java"
+        ]
+      }
+    },
+    {
+      "name": "SuperfluousOre",
+      "type": "block",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superfluous_ore",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yankeevader/superfluousmod/block/SuperfluousOreBlock.java",
+          "src/main/resources/data/superfluousmod/loot_tables/blocks/superfluous_ore.json",
+          "src/main/resources/data/superfluousmod/forge/biome_modifier/superfluous_ore_biome_modifier.json",
+          "src/main/resources/data/superfluousmod/worldgen/configured_feature/superfluous_ore.json",
+          "src/main/resources/assets/superfluousmod/models/item/superfluous_ore.json",
+          "src/main/resources/assets/superfluousmod/blockstates/superfluous_ore.json",
+          "src/main/resources/data/superfluousmod/worldgen/placed_feature/superfluous_ore.json",
+          "src/main/resources/assets/superfluousmod/models/block/superfluous_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "RawSuperfluous",
+      "type": "item",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "raw_superfluous",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yankeevader/superfluousmod/item/RawSuperfluousItem.java",
+          "src/main/resources/assets/superfluousmod/models/item/raw_superfluous.json"
+        ]
+      }
+    },
+    {
+      "name": "SmeltSuperfluous",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_superfluous",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/superfluousmod/recipes/smelt_superfluous.json"
+        ]
+      }
+    },
+    {
+      "name": "SuperfluousOreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superfluous_ore_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yankeevader/superfluousmod/procedures/SuperfluousOreBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "tag_elements": {
+    "BLOCKS:minecraft:needs_diamond_tool": [
+      "~CUSTOM:SuperfluousOre"
+    ],
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:SuperfluousOre"
+    ]
+  },
+  "language_map": {
+    "en_us": {
+      "item.superfluousmod.raw_superfluous": "Raw Superfluous",
+      "block.superfluousmod.superfluous_ore": "Superfluous Ore",
+      "item.superfluousmod.superfluous_ingot": "Superfluous Ingot"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "superfluousmod",
+    "modName": "SuperfluousMod",
+    "version": "1.0.0",
+    "author": "Vader, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Not specified",
+    "serverSideOnly": false,
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.20.1",
+    "modElementsPackage": "net.yankeevader.superfluousmod"
+  },
+  "mcreatorVersion": 202400118518
+}
