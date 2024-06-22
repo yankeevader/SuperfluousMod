@@ -95,6 +95,19 @@
           }
         ]
       }
+    },
+    {
+      "name": "SmeltSuperfluousOre",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "smelt_superfluous_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/superfluousmod/recipes/smelt_superfluous_ore.json"
+        ]
+      }
     }
   ],
   "variable_elements": [],
