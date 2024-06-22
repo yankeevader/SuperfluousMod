@@ -1,6 +1,6 @@
 modLoader="javafml"
 loaderVersion="[47,)"
-license="Not specified"
+license="MIT License"
 
 [[mods]]
 modId="superfluousmod"
@@ -8,7 +8,7 @@ version="1.0.0"
 displayName="SuperfluousMod"
 displayURL="https://mcreator.net"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
-authors="Vader, MCreator"
+authors="yankeevader"
 
 # Start of user code block mod configuration
 # End of user code block mod configuration
