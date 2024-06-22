@@ -116,7 +116,12 @@
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "test",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "superfluousmod",
