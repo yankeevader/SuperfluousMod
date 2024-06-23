@@ -1,7 +1,7 @@
 
 package net.yankeevader.superfluousmod.block;
 
-import net.yankeevader.superfluousmod.procedures.SuperfluousOreBlockDestroyedByPlayerProcedure;
+import net.yankeevader.superfluousmod.procedures.OreXPProcedure;
 
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraft.world.level.material.FluidState;
@@ -29,7 +29,7 @@ public class SuperfluousOreBlock extends Block {
 	@Override
 	public boolean onDestroyedByPlayer(BlockState blockstate, Level world, BlockPos pos, Player entity, boolean willHarvest, FluidState fluid) {
 		boolean retval = super.onDestroyedByPlayer(blockstate, world, pos, entity, willHarvest, fluid);
-		SuperfluousOreBlockDestroyedByPlayerProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
+		OreXPProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ(), entity);
 		return retval;
 	}
 }

@@ -24,7 +24,6 @@
       "metadata": {
         "files": [
           "src/main/java/net/yankeevader/superfluousmod/block/SuperfluousOreBlock.java",
-          "src/main/resources/data/superfluousmod/loot_tables/blocks/superfluous_ore.json",
           "src/main/resources/data/superfluousmod/forge/biome_modifier/superfluous_ore_biome_modifier.json",
           "src/main/resources/data/superfluousmod/worldgen/configured_feature/superfluous_ore.json",
           "src/main/resources/assets/superfluousmod/models/item/superfluous_ore.json",
@@ -62,15 +61,41 @@
       }
     },
     {
-      "name": "SuperfluousOreBlockDestroyedByPlayer",
-      "type": "procedure",
-      "sortid": 6,
+      "name": "SmeltSuperfluousOre",
+      "type": "recipe",
+      "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "superfluous_ore_block_destroyed_by_player",
+      "registry_name": "smelt_superfluous_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/yankeevader/superfluousmod/procedures/SuperfluousOreBlockDestroyedByPlayerProcedure.java"
+          "src/main/resources/data/superfluousmod/recipes/smelt_superfluous_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "SuperfluousOreLoot",
+      "type": "loottable",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "superfluous_ore_loot",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/superfluousmod/loot_tables/blocks/superfluous_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "OreXP",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "ore_xp",
+      "metadata": {
+        "files": [
+          "src/main/java/net/yankeevader/superfluousmod/procedures/OreXPProcedure.java"
         ],
         "dependencies": [
           {
@@ -93,19 +118,6 @@
             "name": "world",
             "type": "world"
           }
-        ]
-      }
-    },
-    {
-      "name": "SmeltSuperfluousOre",
-      "type": "recipe",
-      "sortid": 7,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "smelt_superfluous_ore",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/superfluousmod/recipes/smelt_superfluous_ore.json"
         ]
       }
     }
