@@ -1,6 +1,7 @@
 package net.yankeevader.superfluousmod.procedures;
 
 import net.yankeevader.superfluousmod.init.SuperfluousmodModItems;
+import net.yankeevader.superfluousmod.init.SuperfluousmodModBlocks;
 
 import net.minecraft.world.level.LevelAccessor;
 import net.minecraft.world.item.enchantment.Enchantments;
@@ -62,6 +63,14 @@ public class SuperfluousOreBlockDestroyedByPlayerProcedure {
 						entityToSpawn.setPickUpDelay(0);
 						_level.addFreshEntity(entityToSpawn);
 					}
+				}
+			}
+		} else {
+			if ((entity instanceof LivingEntity _livEnt ? _livEnt.getMainHandItem() : ItemStack.EMPTY).getEnchantmentLevel(Enchantments.SILK_TOUCH) == 1) {
+				if (world instanceof ServerLevel _level) {
+					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(SuperfluousmodModBlocks.SUPERFLUOUS_ORE.get()));
+					entityToSpawn.setPickUpDelay(0);
+					_level.addFreshEntity(entityToSpawn);
 				}
 			}
 		}
